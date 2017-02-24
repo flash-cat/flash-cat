@@ -34,3 +34,4 @@ log4j.appender.MongoDB.layout.ConversionPattern = {"timestamp": "% d", "level": 
   1. First configure the tomcat log output to log4j, download tomcat-juli.jar to tomcat / bin, overwriting the original jar, download tomcat-util.jar to tomcat / lib, copy log4mongo-java, flash-dog-api-log4j and mongo-java-driver, log4j.properties to lib
   2. Modify tomcat / conf / server.xml in the access-log section: className = "com.skymobi.tomcat.Log4JAccessLogValve"
   3. Restart tomcat, in logs / catalina.log can see the access log
+
